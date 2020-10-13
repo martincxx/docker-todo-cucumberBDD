@@ -14,3 +14,6 @@ ADD ./package-lock.json package-lock.json
 RUN npm ci
 ADD ./.env ./
 ADD ./babel.config.js ./
+ADD ./test ./
+
+CMD [ "./run.sh" ]
