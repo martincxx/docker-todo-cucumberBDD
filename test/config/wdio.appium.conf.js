@@ -5,7 +5,8 @@ exports.config = {
   ...{
     host: "0.0.0.0",
     port: 4723,
-    //path: "/wd/hub",
+    //path: "/wd/hub/",
+    
     services: [
       [
         "appium",
@@ -41,19 +42,13 @@ exports.config = {
     // // For Android bases mobile device
     capabilities: [
       {
-        appiumVersion: "1.15.1",
-        automationName: "Appium",
         platformName: "Android",
-        platformVersion: "10.0",
-        deviceName: "Pixel 2 Android 10",
-        maxInstances: 1, //added
-        //     //deviceName: 'iPhone 6s',
-        browserName: "chrome",
-        //appiumVersion: "1.6.5",
-        //automationName: "Appium",
-        //platformName: "Android",
-        //platformVersion: "10.0",
-        //     deviceName: 'Android Emulator',
+        maxInstances: 1,
+        appiumVersion: "1.18.3",
+        deviceName: "Pixel_XL_API_30",
+        //automationName="Appium",
+        platformVersion: "10.0+",
+        browserName: "Chrome",
         //browserName: "chrome",
         //     // chromeOptions: {
         //     //   androidPackage: 'com.android.chrome',
@@ -63,7 +58,7 @@ exports.config = {
         //     //orientation: 'PORTRAIT',
         //     //nativeInstrumentsLib: true,
         //     //isolateSimDevice: true,
-        clearSystemFiles: true,
+       // clearSystemFiles: true,
         //     //app: APP_PATH
         //     commandTimeout: '7200',
         //     noReset: false,
