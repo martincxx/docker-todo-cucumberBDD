@@ -10,9 +10,7 @@
     "allure:history": "mkdir -p allure-report/history ./test/reports/allure-results/history && cp -a allure-report/history ./test/reports/allure-results/",
     "allure-report": "node_modules/.bin/allure generate --clean ./test/reports/allure-results && allure open",
     "junit-report": "node_modules/.bin/junit-viewer --results=./test/reports/junit-results --save=junit-results.html && open junit-results.html",
-    "test-sauce": "wdio ./test/config/wdio.sauce.conf.js",
-    "test-browserstack": "wdio ./test/config/wdio.browserstack.conf.js",
-    "test-local": "npm run allure:history && wdio ./test/config/wdio.local.conf.js",
+    "selenium": "docker-compose up -d",
     "test-local-headless": "npm run allure:history && wdio ./test/config/wdio.headless.local.conf.js",
     "test-mobile": "wdio ./test/config/wdio.appium.conf.js"
   },
