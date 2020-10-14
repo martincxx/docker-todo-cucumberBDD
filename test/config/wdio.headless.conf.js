@@ -3,7 +3,7 @@ const { config } = require('./wdio.shared.conf')
 exports.config = {
     ...config,
     ...{
-      services: ['selenium-standalone'],
+      services: [],
       capabilities: [
           {
             maxInstances: 5,
